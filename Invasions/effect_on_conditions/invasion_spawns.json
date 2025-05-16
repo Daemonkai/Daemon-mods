@@ -48,7 +48,7 @@
       "u_spawn_monster": "GROUP_FERAL_WIZARDS",
       "outdoor_only": true,
       "group": true,
-      "real_count": [ 1 ],
+      "real_count": 1,
       "min_radius": [ 4, 8 ],
       "max_radius": [ 10, 15],
       "spawn_message": "Arcane ramblings can be heard in your vicinity...",
