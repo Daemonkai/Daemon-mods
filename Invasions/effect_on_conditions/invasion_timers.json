@@ -1,0 +1,43 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Zombie_Invasion_Timer",
+    "recurrence": [ "5 days", "20 days" ],
+    "global": true,
+    "effect": { "run_eocs": [ "EOC_Zombie_Invasion" ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Migo_Invasion_Timer",
+    "recurrence": [ "35 days", "65 days" ],
+    "global": true,
+    "effect": { "run_eocs": [ "EOC_Migo_Invasion" ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PsionFeral_Invasion_Timer",
+    "recurrence": [ "20 days", "40 days" ],
+    "global": true,
+    "condition": {
+      "u_has_any_trait": [
+        "BIOKINETIC",
+        "CLAIRSENTIENT",
+        "ELECTROKINETIC",
+        "PHOTOKINETIC",
+        "PYROKINETIC",
+        "TELEKINETIC",
+        "TELEPATH",
+        "TELEPORTER",
+        "VITAKINETIC"
+      ]
+    },
+    "effect": { "run_eocs": [ "EOC_PsionFeral_Invasion" ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Wizard_Invasion_Timer",
+    "recurrence": [ "5 days", "25 days" ],
+    "global": true,
+    "effect": { "run_eocs": [ "EOC_Wizard_Invasion" ] }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Zombie_Invasion",
+    "effect": {
+      "u_spawn_monster": "GROUP_ZOMBIE",
+      "outdoor_only": true,
+      "group": true,
+      "real_count": [ 10, 100 ],
+      "min_radius": [ 8, 13 ],
+      "max_radius": [ 20, 25 ],
+      "spawn_message": "The sounds of a horde alert your senses...",
+      "spawn_message_plural": "The sounds of a horde alert your senses..."
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Migo_Invasion",
+    "effect": {
+      "u_spawn_monster": "GROUP_MI-GO_CAMP_OM",
+      "outdoor_only": true,
+      "group": true,
+      "real_count": [ 5, 10 ],
+      "min_radius": [ 15, 25 ],
+      "max_radius": [ 35, 50 ],
+      "spawn_message": "You get a sense that something is hunting nearby...",
+      "spawn_message_plural": "You get a sense that something is hunting nearby..."
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PsionFeral_Invasion",
+    "effect": {
+      "u_spawn_monster": "GROUP_FERAL_PSYCHIC",
+      "outdoor_only": true,
+      "group": true,
+      "real_count": [ 5, 20 ],
+      "min_radius": [ 10, 20 ],
+      "max_radius": [ 25, 35],
+      "spawn_message": "Your attunement to the nether is disturbed...",
+      "spawn_message_plural": "Your attunement to the nether is disturbed..."
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Wizard_Invasion",
+    "effect": {
+      "u_spawn_monster": "GROUP_FERAL_WIZARDS",
+      "outdoor_only": true,
+      "group": true,
+      "real_count": [ 1 ],
+      "min_radius": [ 4, 8 ],
+      "max_radius": [ 10, 15],
+      "spawn_message": "Arcane ramblings can be heard in your vicinity...",
+      "spawn_message_plural": "Arcane ramblings can be heard in your vicinity..."
+    }
+  }
+]
