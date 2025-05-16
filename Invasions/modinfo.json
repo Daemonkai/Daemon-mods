@@ -1,0 +1,12 @@
+[
+    {
+      "type": "MOD_INFO",
+      "id": "invasions",
+      "name": "Invasions",
+      "authors": [ "Daemonkai" ],
+      "maintainers": [ "Daemonkai" ],
+      "description": "All safety is temporary",
+      "category": "content",
+      "dependencies": [ "dda" ]
+    }
+  ]

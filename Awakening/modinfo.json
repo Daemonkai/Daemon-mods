@@ -1,0 +1,13 @@
+[
+    {
+      "type": "MOD_INFO",
+      "id": "awakening",
+      "name": "Awakening",
+      "authors": [ "Daemonkai" ],
+      "maintainers": [ "Daemonkai" ],
+      "description": "Character stat cultivation",
+      "category": "content",
+      "dependencies": [ "dda" ]
+    }
+  ]
+  

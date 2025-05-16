@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "adaptive",
+    "name": "Adaptive",
+    "authors": [ "Daemon" ],
+    "description": "they really thought",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

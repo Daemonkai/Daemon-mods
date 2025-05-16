@@ -1,0 +1,48 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_PERK_MENU_MAIN",
+    "responses": [
+      {
+        "condition": { "not": { "u_has_trait": "perk_unbreakable_focus" } },
+        "text": "Gain [<trait_name:perk_unbreakable_focus>]",
+        "effect": [
+          { "set_string_var": "<trait_name:perk_unbreakable_focus>", "target_var": { "context_val": "trait_name" } },
+          {
+            "set_string_var": "<trait_description:perk_unbreakable_focus>",
+            "target_var": { "context_val": "trait_description" }
+          },
+          { "set_string_var": "perk_unbreakable_focus", "target_var": { "context_val": "trait_id" } },
+          {
+            "set_string_var": "Requires intelligence 18",
+            "target_var": { "context_val": "trait_requirement_description" },
+            "i18n": true
+          },
+          {
+            "set_condition": "perk_condition",
+            "condition": { "math": [ "u_val('intelligence_base') + u_val('intelligence_bonus')", ">=", "18" ] }
+          }
+        ],
+        "topic": "TALK_PERK_MENU_SELECT"
+      },
+      {
+        "condition": { "not": { "u_has_trait": "perk_unbreakable_focus2" } },
+        "text": "Gain [<trait_name:perk_unbreakable_focus2>]",
+        "effect": [
+          { "set_string_var": "<trait_name:perk_unbreakable_focus2>", "target_var": { "context_val": "trait_name" } },
+          {
+            "set_string_var": "<trait_description:perk_unbreakable_focus2>",
+            "target_var": { "context_val": "trait_description" }
+          },
+          { "set_string_var": "perk_unbreakable_focus2", "target_var": { "context_val": "trait_id" } },
+          {
+            "set_string_var": "Must have the Unbreakable  Focus perk.",
+            "target_var": { "context_val": "trait_requirement_description" }
+          },
+          { "set_condition": "perk_condition", "condition": { "u_has_trait": "perk_unbreakable_focus" } }
+        ],
+        "topic": "TALK_PERK_MENU_SELECT"
+      }
+    ]
+  }
+]

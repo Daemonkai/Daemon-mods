@@ -1,0 +1,12 @@
+{
+    "type": "mutation",
+    "id": "AWAKENING",
+    "name": "Soul Awakening",
+    "points": 0,
+    "description": "You have realized how to awaken your potential.",
+    "starting_trait": false,
+    "purifiable": false,
+    "player_display": true,
+    "valid": false,
+    "spells_learned": [ [ "awakening_phys", 0 ], ["awakening_mind", 0] ]
+  }

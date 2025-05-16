@@ -1,0 +1,14 @@
+[
+    {
+        "type": "jmath_function",
+        "id": "exp_modifier_phys",
+        "num_args": 1,
+        "return": "(e ^ ( ( u_spell_level('awakening_phys') + 62.5 ) * 0.146661 ) - 6200 * (_0) ) - (e ^ ( ( ( u_spell_level('awakening_phys') - 1 ) + 62.5 ) * 0.146661 ) - 6200 * (_0)) "
+    },
+    {
+      "type": "jmath_function",
+      "id": "exp_modifier_mind",
+      "num_args": 1,
+      "return": "(e ^ ( ( u_spell_level('awakening_mind') + 62.5 ) * 0.146661 ) - 6200 * (_0) ) - (e ^ ( ( ( u_spell_level('awakening_mind') - 1 ) + 62.5 ) * 0.146661 ) - 6200 * (_0)) "
+    }
+]

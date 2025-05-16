@@ -1,0 +1,10 @@
+[
+    {
+        "type": "recipe_category",
+        "id": "CC_AWAKENING",
+        "recipe_subcategories": [
+          "CSC_AWAKENING_ALL",
+          "CSC_AWAKENING_RITUALS"
+        ]
+      }
+]

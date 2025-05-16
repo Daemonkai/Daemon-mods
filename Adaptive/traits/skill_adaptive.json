@@ -1,0 +1,12 @@
+[
+  {
+    "type": "mutation",
+    "id": "SKILL_ADAPTIVE_STATS",
+    "name": { "str": "Adaptive Mind and Body" },
+    "description": { "str": "Your primary stats shift dynamically with your accumulated skills." },
+    "points": 0,
+    "starting_trait": false, 
+    "flags": [ "PERM_EFFECT" ], 
+    "enchantments": [ "ENCH_DYNAMIC_STATS" ]
+  }
+]

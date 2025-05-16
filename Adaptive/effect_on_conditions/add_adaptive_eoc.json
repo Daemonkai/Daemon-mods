@@ -1,0 +1,22 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ensure_adaptive_trait",
+    "eoc_type": "EVENT",
+    "required_event": "game_begin",
+    "condition": { "not":{ "u_has_trait": "SKILL_ADAPTIVE_STATS" } },
+    "effect": [
+      { "u_add_trait": "SKILL_ADAPTIVE_STATS" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ensure_adaptive_trait2",
+    "eoc_type": "EVENT",
+    "required_event": "game_load",
+    "condition": { "not":{ "u_has_trait": "SKILL_ADAPTIVE_STATS" } },
+    "effect": [
+      { "u_add_trait": "SKILL_ADAPTIVE_STATS" }
+    ]
+  }
+]

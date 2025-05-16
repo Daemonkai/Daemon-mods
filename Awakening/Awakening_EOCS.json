@@ -1,0 +1,34 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_AWAKENING_PHYS_STATBOOST",
+    "eoc_type": "EVENT",
+    "required_event": "player_levels_spell",
+    "condition": { "compare_string": [ "awakening_phys", { "context_val": "spell" } ] },
+    "effect": [ { "u_add_effect": "awakening_phys_effect", "duration": "PERMANENT" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_AWAKENING_MIND_STATBOOST",
+    "eoc_type": "EVENT",
+    "required_event": "player_levels_spell",
+    "condition": { "compare_string": [ "awakening_mind", { "context_val": "spell" } ] },
+    "effect": [ { "u_add_effect": "awakening_mind_effect", "duration": "PERMANENT" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_AWAKENING_RECIPE_TEACHER",
+    "eoc_type": "EVENT",
+    "required_event": "game_begin",
+    "condition": { "u_has_trait": "AWAKENING" },
+    "effect":  { 
+                 "run_eocs": [ "EOC_TEACH_AWAKENING_RECIPES"],
+                 "time_in_future": [ "0 seconds", "10 seconds" ] },
+    "false_effect": [ { "u_add_trait": "AWAKENING" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_TEACH_AWAKENING_RECIPES",
+    "effect": [ { "u_learn_recipe": "awakening_phys" }, { "u_learn_recipe": "awakening_mind" } ]
+  }
+]

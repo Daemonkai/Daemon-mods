@@ -1,0 +1,38 @@
+[
+  {
+    "id": "awakening_phys",
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "category": "CC_AWAKENING",
+    "subcategory": "CSC_AWAKENING_ALL",
+    "name": "Awakening: Body Transformation",
+    "difficulty": 0,
+    "time": "6 h",
+    "autolearn": true,
+    "flags": [ "SECRET", "BLIND_EASY" ],
+    "result_eocs": [
+      {
+        "id": "EOC_AWAKENING_PHYS_EXPADD",
+        "effect": [ { "math": [ "u_spell_exp('awakening_phys')", "+=", "exp_modifier_phys(1) / ( 1.2 ^ u_spell_level('awakening_phys') ) " ] } ]
+      }
+    ]
+  },
+  {
+    "id": "awakening_mind",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_AWAKENING",
+    "subcategory": "CSC_AWAKENING_ALL",
+    "name": "Awakening: Mind Transformation",
+    "difficulty": 0,
+    "time": "6 h",
+    "autolearn": true,
+    "flags": [ "SECRET", "BLIND_EASY" ],
+    "result_eocs": [
+      {
+        "id": "EOC_AWAKENING_MIND_EXPADD",
+        "effect": [ { "math": [ "u_spell_exp('awakening_mind')", "+=", "exp_modifier_mind(1) / ( 1.2 ^ u_spell_level('awakening_mind') ) " ] } ]
+      }
+    ]
+  }
+]

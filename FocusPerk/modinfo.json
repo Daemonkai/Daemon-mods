@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "focus_perk",
+    "name": "Focus Perks",
+    "authors": [ "Daemon" ],
+    "description": "hehe :>",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

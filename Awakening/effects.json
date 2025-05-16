@@ -1,0 +1,35 @@
+[
+    {
+        "type": "effect_type",
+        "id": "awakening_phys_effect",
+        "apply_message": "your body feels stronger",
+        "max_intensity": 999,
+        "int_add_val": 1,
+        "int_decay_tick": 0,
+        "base_mods": {
+            "str_mod": [1],
+            "dex_mod": [1]
+        },
+        "scaling_mods": {
+            "str_mod": [1],
+            "dex_mod": [1]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "awakening_mind_effect",
+        "apply_message": "your mind feels sharper",
+        "max_intensity": 999,
+        "int_add_val": 1,
+        "int_decay_tick": 0,
+        "base_mods": {
+            "int_mod": [1],
+            "per_mod": [1]
+        },
+        "scaling_mods": {
+            "int_mod": [1],
+            "per_mod": [1]
+        }
+    }
+    
+]

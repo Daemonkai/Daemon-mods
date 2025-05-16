@@ -1,0 +1,27 @@
+[
+    {
+        "type": "mutation",
+        "id": "perk_unbreakable_focus",
+        "name": { "str": "Unbreakable Focus" },
+        "points": 0,
+        "description": "Through honing your intellect you have managed to develop an incredible resistance to losing focus.",
+        "changes_to": [ "perk_unbreakable_focus2" ],
+        "category": [ "perk" ],
+        "starting_trait": false,
+        "valid": false,
+        "purifiable": false,
+        "activated_eocs": [ "EOC_UNBREAKABLE_FOCUS" ]
+      },
+      {
+        "type": "mutation",
+        "id": "perk_unbreakable_focus2",
+        "name": { "str": "Perfect Focus" },
+        "points": 0,
+        "description": "Your intelligence is unparalleled and so is your focus, no matter what happens, you maintain perfect focus. ",
+        "category": [ "perk" ],
+        "starting_trait": false,
+        "valid": false,
+        "purifiable": false,
+        "activated_eocs": [ "EOC_UNBREAKABLE_FOCUS2" ]
+      }
+]

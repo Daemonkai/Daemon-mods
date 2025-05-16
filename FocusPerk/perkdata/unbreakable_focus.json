@@ -1,0 +1,16 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_UNBREAKABLE_FOCUS",
+    "recurrence": [ "1 minute", "1 minute" ],
+    "condition": { "and": [ { "u_has_trait": "perk_unbreakable_focus" }, { "math": [ "u_val('focus')", "<=", "50" ] } ] },
+    "effect": [ { "math": [ "u_val('focus')", "+=", "10" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_UNBREAKABLE_FOCUS2",
+    "recurrence": [ "1 minute", "1 minute" ],
+    "condition": { "and": [ { "u_has_trait": "perk_unbreakable_focus2" }, { "math": [ "u_val('focus')", "<=", "100" ] } ] },
+    "effect": [ { "math": [ "u_val('focus')", "+=", "10" ] } ]
+  }
+]

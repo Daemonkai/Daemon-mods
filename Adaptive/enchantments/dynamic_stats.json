@@ -1,0 +1,46 @@
+[
+  {
+    "type": "enchantment",
+    "id": "ENCH_DYNAMIC_STATS",
+    "name": { "str": "Skill-Based Stat Adjustments" },
+    "description": "Your stats shift dynamically with your accumulated skills.",         
+    "condition": "ALWAYS",
+    "values": [
+      {
+        "value": "STRENGTH",
+        "add": {
+          "math": [
+            "max(0, floor( ( ( u_skill('mechanics') + u_skill('swimming') + u_skill('bashing') + u_skill('cutting') + u_skill('melee') + u_skill('throw') + u_skill('metaphysics') + u_skill('athletics') ) - 3) ^ 0.4 ) )"
+          ]
+        }
+      },
+      {
+        "value": "DEXTERITY",
+        "add": {
+          "math": [
+            "max(0, floor( ( ( u_skill('driving') + u_skill('survival') + u_skill('tailor') + u_skill('traps') + u_skill('dodge') + u_skill('stabbing') + u_skill('unarmed') + u_skill('metaphysics') + u_skill('athletics') ) - 3) ^ 0.4 ) )"
+
+          ]
+        }
+      },
+      {
+        "value": "INTELLIGENCE",
+        "add": {
+          "math": [
+            "max(0, floor( ( ( u_skill('computer') + u_skill('cooking') + u_skill('electronics') + u_skill('fabrication') + u_skill('firstaid') + u_skill('speech') + u_skill('chemistry') + u_skill('metaphysics') + u_skill('spellcraft') + u_skill('deduction') ) - 3) ^ 0.4 ) )"
+
+          ]
+        }
+      },
+      {
+        "value": "PERCEPTION",
+        "add": {
+          "math": [
+            "max(0, floor( ( ( u_skill('archery') + u_skill('gun') + u_skill('launcher') + u_skill('pistol') + u_skill('rifle') + u_skill('shotgun') + u_skill('smg') + u_skill('metaphysics') + u_skill('athletics') + u_skill('deduction') ) - 3) ^ 0.4 ) )"
+
+          ]
+        }
+      }
+    ]
+  }
+]
